@@ -8,4 +8,5 @@ public interface ICustomerService {
 
     List<Customer> getCustomers();
     void saveCustomer(Customer customer);
+    Customer getCustomer(Integer customerId);
 }
