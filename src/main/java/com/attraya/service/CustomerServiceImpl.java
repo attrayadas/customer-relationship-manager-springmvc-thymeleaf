@@ -29,4 +29,9 @@ public class CustomerServiceImpl implements  ICustomerService{
         Optional<Customer> optional = repo.findById(customerId);
         return optional.get();
     }
+
+    @Override
+    public void deleteCustomer(Integer customerId) {
+        repo.deleteById(customerId);
+    }
 }
