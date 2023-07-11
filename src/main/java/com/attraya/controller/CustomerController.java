@@ -19,9 +19,7 @@ public class CustomerController {
 
     @GetMapping("/list")
     public String listCustomers(Map<String, Object> model){
-        System.out.println("Implementation class is :: "+service.getClass().getName());
         List<Customer> customers = service.getCustomers();
-        customers.forEach(System.out::println);
         model.put("customers", customers);
         return "list-customers";
     }
@@ -35,7 +33,6 @@ public class CustomerController {
 
     @PostMapping("/saveCustomer")
     public String saveCustomer(@ModelAttribute("customer") Customer customer){
-        System.out.println(customer);
         service.saveCustomer(customer);
         return "redirect:/customer/list";
     }
@@ -43,8 +40,6 @@ public class CustomerController {
     @GetMapping("/showFormForUpdate")
     public String showFormForUpdate(@RequestParam Integer customerId, Map<String, Object> model) {
         Customer customer = service.getCustomer(customerId);
-        System.out.println(customer);
-
         model.put("customer", customer);
         return "customer-form";
     }
