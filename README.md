@@ -42,3 +42,5 @@ The app will start running at <http://localhost:8080/CRM>
 ![Delete operation](https://github.com/attrayadas/customer-relationship-manager-springmvc/assets/96123861/1e7a01d6-bb5d-44b8-a5ae-46924575bbdd)
 
 ## Demo
+![CRM-Thymeleaf-Demo](https://github.com/attrayadas/customer-relationship-manager-springmvc-thymeleaf/assets/96123861/c7ec811d-1c48-4535-ab07-4c5acf1dd35b)
+
